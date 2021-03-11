@@ -1,5 +1,8 @@
 *
 	font-family: 'Roboto', sans-serif
+img
+	max-width: 100%
+	height: auto
 
 .visually-hidden
 	position: absolute
@@ -12,4 +15,47 @@
 	clip-path: inset(100%)
 	clip: rect(0 0 0 0)
 	overflow: hidden
+nav
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+	.container-fluid
+		position: relative
+		.navbar-brand
+			margin: 0 0 0 65px
+
+		.navbar-brand::before
+			content: ""
+
+			position: absolute
+
+			left: 0
+
+			width: 80px
+			height: 80px
+
+			background-image: url(../../img/logo-heart-black.png)
+			background-position: center
+			background-repeat: no-repeat
+		.navbar-brand:hover::before
+			content: ""
+
+			position: absolute
+
+			left: 0
+
+			width: 80px
+			height: 80px
+
+			background-image: url(../../img/logo-heart-red.png)
+			background-position: center
+			background-repeat: no-repeat
+
+.nav-link
+	text-transform: uppercase
+	font-weight: 700
+	font-size: 18px
+	color: #000000
+.btn-outline-warning
+
+
 
