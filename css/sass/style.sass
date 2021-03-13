@@ -1,5 +1,10 @@
-*
-	font-family: 'Roboto', sans-serif
+body
+	font-size: 20px
+	line-height: 24px
+	font-weight: 400
+	font-family: 'Roboto', 'Arial', sans-serif
+	text-transform: uppercase
+
 img
 	max-width: 100%
 	height: auto
@@ -16,59 +21,53 @@ img
 	clip: rect(0 0 0 0)
 	overflow: hidden
 
+/** main navigation block **/
 
-nav
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
-
-	/** довавление логотипа **/
-	.container-fluid
+.navbar
+	padding: 12px 0 8px 0
+	&__brand-link
+	&__brand-img
+	&__toggler-button
 		position: relative
-		.navbar-brand
-			margin: 0 10px 0 70px
-
-		.navbar-brand::before
+		border: none
+	&__toggler-button:hover, &__toggler-button:focus
+		box-shadow: none
+		&:hover::after, &:focus::after, &:active::after
 			content: ""
 
 			position: absolute
 
-			left: 0
+			width: 45px
+			height: 50px
 
-			width: 80px
-			height: 80px
+			right: 0
+			top: -19px
 
-			background-image: url(../img/logo-heart-black.png)
-			background-position: center
+			background-image: url(../img/button-heart-red.png)
+			background-position: 0 0
 			background-repeat: no-repeat
+	&__toggler-button-img
+		content: ""
 
-		.navbar-brand:hover::before, .navbar-brand:focus::before
-			content: ""
+		position: absolute
 
-			position: absolute
+		width: 45px
+		height: 50px
 
-			left: 0
+		right: 0
+		top: -19px
 
-			width: 80px
-			height: 80px
+		background-image: url(../img/button-heart-black.png)
+		background-position: 0 0
+		background-repeat: no-repeat
 
-			background-image: url(../img/logo-heart-red.png)
-			background-position: center
-			background-repeat: no-repeat
 
-			transition: 0.3s
-
-/** изменений шрифта в меню **/
-.nav-link
-	text-transform: uppercase
-	font-weight: 700
-	font-size: 18px
-	color: #000000
-
-/** увеличение и смена цвета кнопки гамбургера **/
-.navbar-toggler-icon:hover
-	opacity: 0.8
-	transition: 0.3s
-	width: 2em
-  	height: 2em
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28250, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-
+.navbar-collapse
+	&__list
+	&__item
+		border: none
+	&__item-img
+	&__link
+	&__dropdown-list
+	&__dropdown-item
 
