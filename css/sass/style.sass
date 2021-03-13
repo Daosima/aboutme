@@ -21,7 +21,7 @@ img
 	clip: rect(0 0 0 0)
 	overflow: hidden
 
-/** main navigation block **/
+/** main-header navigation block **/
 
 .navbar
 	padding: 12px 0 8px 0
@@ -32,7 +32,7 @@ img
 		border: none
 	&__toggler-button:hover, &__toggler-button:focus
 		box-shadow: none
-		&:hover::after, &:focus::after, &:active::after
+		&:hover::after, &:focus::after
 			content: ""
 
 			position: absolute
@@ -46,6 +46,7 @@ img
 			background-image: url(../img/button-heart-red.png)
 			background-position: 0 0
 			background-repeat: no-repeat
+
 	&__toggler-button-img
 		content: ""
 
@@ -66,8 +67,49 @@ img
 	&__list
 	&__item
 		border: none
-	&__item-img
 	&__link
+	&__img
+		margin-left: 35%
 	&__dropdown-list
 	&__dropdown-item
 
+/** main promo block **/
+
+.main
+	.promo
+		text-align: center
+		&__header
+			margin-top: 25%
+			font-size: 45px
+	.promo-wrap
+		margin-top: 20%
+		&__subheader
+			font-size: 25px
+			font-weight: 700
+			color: #ff0000
+		&__text
+			font-size: 25px
+			font-weight: 700
+	.arrow-scroll-down
+		position: relative
+		height: 100vh
+
+		&__one
+			width: 50px
+			position: absolute
+			top: 10%
+			left: calc(50% - 25px)
+			animation: arrowDown 2s infinite
+
+		&__two
+			opacity: 0
+			animation-delay: 1s
+
+		@keyframes arrowDown
+			0%
+				bottom: 30px
+				opacity: 1
+
+			100%
+				bottom: 0px
+				opacity: 0
