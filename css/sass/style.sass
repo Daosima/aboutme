@@ -19,9 +19,7 @@ img
 	clip-path: inset(100%)
 	clip: rect(0 0 0 0)
 	overflow: hidden
-
 /** main-header navigation block **/
-
 .navbar
 	padding: 12px 0 8px 0
 	&__brand-link
@@ -31,6 +29,8 @@ img
 		border: none
 	&__toggler-button:hover, &__toggler-button:focus
 		box-shadow: none
+
+
 		&:hover::after, &:focus::after
 			content: ""
 
@@ -39,13 +39,13 @@ img
 			width: 45px
 			height: 50px
 
-			right: 0
+			left: 0px
 			top: -19px
 
 			background-image: url(../img/button-heart-red.png)
 			background-position: 0 0
 			background-repeat: no-repeat
-
+			z-index: 2
 	&__toggler-button-img
 		content: ""
 
@@ -54,12 +54,30 @@ img
 		width: 45px
 		height: 50px
 
-		right: 0
+		left: 0
 		top: -19px
 
 		background-image: url(../img/button-heart-black.png)
 		background-position: 0 0
 		background-repeat: no-repeat
+		z-index: 1
+	&__toggler-button
+		.circle-wrap-1
+			position: relative
+		.circle-wrap-2
+			position: absolute
+			width: 20.5px
+			top: -15px
+			left: 0
+			z-index: 0
+			animation: ciercle 2s infinite
+		@keyframes ciercle
+			0%
+				opacity: 0
+			100%
+				opacity: 1
+
+
 
 .navbar-collapse
 	&__list
@@ -67,7 +85,6 @@ img
 		border: none
 	&__link
 	&__img
-		margin-left: 35%
 	&__dropdown-list
 	&__dropdown-item
 
@@ -111,7 +128,6 @@ img
 			100%
 				bottom: 0px
 				opacity: 0
-
 
 // main nav-footer block
 
