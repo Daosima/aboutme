@@ -3,11 +3,9 @@ body
 	line-height: 24px
 	font-weight: 400
 	font-family: 'Roboto', 'Arial', sans-serif
-	text-transform: uppercase
 img
 	max-width: 100%
 	height: auto
-
 .visually-hidden
 	position: absolute
 	width: 1px
@@ -19,7 +17,7 @@ img
 	clip-path: inset(100%)
 	clip: rect(0 0 0 0)
 	overflow: hidden
-/** main-header navigation block **/
+
 .navbar
 	padding: 12px 0 8px 0
 	&__brand-link
@@ -29,8 +27,6 @@ img
 		border: none
 	&__toggler-button:hover, &__toggler-button:focus
 		box-shadow: none
-
-
 		&:hover::after, &:focus::after
 			content: ""
 
@@ -66,19 +62,16 @@ img
 			position: relative
 		.circle-wrap-2
 			position: absolute
-			width: 20.5px
+			width: 22px
 			top: -15px
-			left: 0
+			left: -1px
 			z-index: 0
-			animation: ciercle 2s infinite
+			animation: ciercle 1s infinite
 		@keyframes ciercle
 			0%
 				opacity: 0
 			100%
 				opacity: 1
-
-
-
 .navbar-collapse
 	&__list
 	&__item
@@ -88,56 +81,84 @@ img
 	&__dropdown-list
 	&__dropdown-item
 
-/** main promo block **/
+.navbar-footer-main
+	&__link-up
+	&__list
+	&__item
+	&__item-link
+		text-transform: none
+		color: #000000
 
 .main
-	padding-top: 10%
-	background-image: url(../img/bg-1.jpg)
-	background-position: center
-	background-repeat: no-repeat
-	background-attachment: fixed
-	height: 100vh
-
+	.main-bg-wrap
+		padding-top: 10%
+		background-image: url(../img/bg-1.jpg)
+		background-position: center
+		background-repeat: no-repeat
+		background-attachment: fixed
+		height: 100vh
 	.promo
 		text-align: center
 		&__header
 			font-size: 45px
+			text-transform: uppercase
 	.promo-wrap
 		margin-top: 20%
 		&__subheader
 			font-size: 25px
 			font-weight: 700
 			color: #ff0000
+			text-transform: uppercase
 		&__text
 			font-size: 25px
 			font-weight: 700
 	.arrow-scroll-down
+		margin-top: 10%
 		position: relative
 		&__one
 			position: absolute
-			top: 10%
+			top: 30px
 			left: calc(50% - 25px)
 			animation: arrowDown 2s infinite
 		&__two
 			opacity: 0
-			animation-delay: 1s
+			animation-delay: 2s
+
 		@keyframes arrowDown
 			0%
 				bottom: 30px
 				opacity: 1
 			100%
-				bottom: 0px
+				bottom: 0
 				opacity: 0
 
-// main nav-footer block
+	.HTML
+		margin-top: 3%
+		height: 550px
+		background-color: #ffffff
+		hr
+			padding: 0
+			margin: 0
+		&__header
+			text-align: center
+			margin-bottom: 1rem
+			&::after
+				content: " and CSS"
+				color: #ff0000
+				font-weight: 700
+		&__button-wrap
+			text-align: center
+			button
+				margin: 1rem
+				text-transform: uppercase
+				&:focus, &:active
+					color: #000000
+			.collapse-short
+				&__card
 
-	.navbar-footer
-		&__link-up
-		&__list
-		&__item
-		&__item-link
 
-// main HTML block
-// main skills block
-// main projects block
-// main contacts block
+
+
+	.skills
+	.projects
+
