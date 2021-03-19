@@ -133,7 +133,6 @@ img
 
 	.HTML
 		margin-top: 1rem
-		// height: 100vh
 		hr
 			padding: 0
 			margin: 0
@@ -201,5 +200,177 @@ img
 					box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0)
 					border-radius: 5px
 					margin-top: 0px
-	.projects
+	.layout
+		&__header
+		&__card-body-wrap
+			position: relative
+			.fixed::after
+				position: absolute
+				content: ""
+
+				width: 80px
+				height: 80px
+
+				left: calc(50% - 40px)
+				top: 1rem
+
+				background-image: url(../img/layout/1-dark.svg)
+				background-position: 0 0
+				background-repeat: no-repeat
+				background-size: 100%
+			.fixed:hover::after
+				position: absolute
+				content: ""
+
+				width: 80px
+				height: 80px
+
+				left: calc(50% - 40px)
+				top: 1rem
+
+				background-image: url(../img/layout/1-red.svg)
+				background-position: 0 0
+				background-repeat: no-repeat
+				background-size: 100%
+			.adaptive::after
+					position: absolute
+					content: ""
+					width: 80px
+					height: 80px
+
+					left: calc(50% - 40px)
+					top: 1rem
+
+					background-image: url(../img/layout/2-dark.svg)
+					background-position: 0 0
+					background-repeat: no-repeat
+					background-size: 100%
+			.adaptive:hover::after
+					position: absolute
+					content: ""
+					width: 80px
+					height: 80px
+
+					left: calc(50% - 40px)
+					top: 1rem
+
+					background-image: url(../img/layout/2-red.svg)
+					background-position: 0 0
+					background-repeat: no-repeat
+					background-size: 100%
+			.cross-browser::after
+					position: absolute
+					content: ""
+					width: 80px
+					height: 80px
+
+					left: calc(50% - 40px)
+					top: 1rem
+
+					background-image: url(../img/layout/3-dark.svg)
+					background-position: 0 0
+					background-repeat: no-repeat
+					background-size: 100%
+			.cross-browser:hover::after
+					position: absolute
+					content: ""
+					width: 80px
+					height: 80px
+
+					left: calc(50% - 40px)
+					top: 1rem
+
+					background-image: url(../img/layout/3-red.svg)
+					background-position: 0 0
+					background-repeat: no-repeat
+					background-size: 100%
+			.flex::after
+					position: absolute
+					content: ""
+					width: 80px
+					height: 80px
+
+					left: calc(50% - 40px)
+					top: 1rem
+
+					background-image: url(../img/layout/4-dark.svg)
+					background-position: 0 0
+					background-repeat: no-repeat
+					background-size: 100%
+			.flex:hover::after
+					position: absolute
+					content: ""
+					width: 80px
+					height: 80px
+
+					left: calc(50% - 40px)
+					top: 1rem
+
+					background-image: url(../img/layout/4-red.svg)
+					background-position: 0 0
+					background-repeat: no-repeat
+					background-size: 100%
+			.semantic::after
+					position: absolute
+					content: ""
+					width: 80px
+					height: 80px
+
+					left: calc(50% - 40px)
+					top: 1rem
+
+					background-image: url(../img/layout/5-dark.svg)
+					background-position: 0 0
+					background-repeat: no-repeat
+					background-size: 100%
+			.semantic:hover::after
+					position: absolute
+					content: ""
+					width: 80px
+					height: 80px
+
+					left: calc(50% - 40px)
+					top: 1rem
+
+					background-image: url(../img/layout/5-red.svg)
+					background-position: 0 0
+					background-repeat: no-repeat
+					background-size: 100%
+			.valid::after
+					position: absolute
+					content: ""
+					width: 80px
+					height: 80px
+
+					left: calc(50% - 40px)
+					top: 1rem
+
+					background-image: url(../img/layout/6-dark.svg)
+					background-position: 0 0
+					background-repeat: no-repeat
+					background-size: 100%
+			.valid:hover::after
+					position: absolute
+					content: ""
+					width: 80px
+					height: 80px
+
+					left: calc(50% - 40px)
+					top: 1rem
+
+					background-image: url(../img/layout/6-red.svg)
+					background-position: 0 0
+					background-repeat: no-repeat
+					background-size: 100%
+
+		&__card-body
+		&__card-title
+			margin-top: 5rem
+			text-align: center
+		&__card-text
+
+
+
+
+
 
