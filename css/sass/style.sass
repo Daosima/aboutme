@@ -86,9 +86,8 @@ img
 	&__list
 	&__item
 	&__item-link
-		text-transform: none
 		color: #000000
-
+		text-transform: none
 .main
 	.main-bg-wrap
 		padding-top: 10%
@@ -134,7 +133,7 @@ img
 
 	.HTML
 		margin-top: 1rem
-		height: 100vh
+		// height: 100vh
 		hr
 			padding: 0
 			margin: 0
@@ -152,14 +151,15 @@ img
 				text-transform: uppercase
 				&:focus, &:active
 					color: #000000
-		&__collapse
-		.collapse-detail
-			&__card
-			&__text
-		.collapse-short
-
-
-
+	.layout
+		&__header
+			text-align: center
+			margin-bottom: 1rem
+			margin-top: 1rem
+			&::after
+				content: " today"
+				color: #ff0000
+				font-weight: 700
 
 
 	.skills
