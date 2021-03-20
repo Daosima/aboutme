@@ -136,6 +136,8 @@ img
 		hr
 			padding: 0
 			margin: 0
+			color: #ff0000
+			height: 3px
 		&__header
 			text-align: center
 			margin-bottom: 1rem
@@ -148,62 +150,28 @@ img
 			button
 				margin: 1rem
 				text-transform: uppercase
+				color: #000000
+				font-weight: 700
 				&:focus, &:active
 					color: #000000
 	.layout
-		&__header
-			text-align: center
-			margin-bottom: 1rem
-			margin-top: 1rem
-			&::after
-				content: " today"
-				color: #ff0000
-				font-weight: 700
-
-
-	.skills
-		margin-top: 1rem
-		height: 100vh
 		hr
 			padding: 0
-			margin: 0
+			margin-bottom: 3rem
+			color: #ff0000
+			height: 3px
+
 		&__header
 			text-align: center
-			margin-bottom: 1rem
-			&::before
-				content: "My "
+			margin-bottom: 1.5rem
+			margin-top: 1.5rem
+			&::after
+				content: " today is"
 				color: #ff0000
 				font-weight: 700
-		.mt-20
-			margin-top: 100px
-			.progress
-				height: 31px
-				margin-bottom: 10px
-
-				.skill
-					font: normal 12px "Open Sans Web"
-					line-height: 32px
-					padding: 0
-					margin: 0 0 0 20px
-					text-transform: uppercase
-
-					.val
-						float: right
-						font-style: normal
-						margin: 0 20px 0 0
-
-				.progress-bar
-					text-align: left
-					transition-duration: 3s
-
-				.bsp_big-image
-					box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0)
-					border-radius: 5px
-					margin-top: 0px
-	.layout
-		&__header
 		&__card-body-wrap
 			position: relative
+			opacity: 0.9
 			.fixed::after
 				position: absolute
 				content: ""
@@ -362,15 +330,30 @@ img
 					background-position: 0 0
 					background-repeat: no-repeat
 					background-size: 100%
-
+		&__card-body-wrap:hover
+			bottom: 1.5rem
+			opacity: 1
 		&__card-body
 		&__card-title
-			margin-top: 5rem
+			padding-top: 6rem
 			text-align: center
 		&__card-text
 
 
-
-
-
-
+	.skills
+		margin-top: 1rem
+		height: 100vh
+		hr
+			padding: 0
+			margin: 0
+			color: #ff0000
+			height: 3px
+		&__header
+			text-align: center
+			margin-bottom: 1rem
+			color: #ff0000
+			font-weight: 700
+			&::before
+				content: "My hard "
+				color: #000000
+				font-weight: 400
