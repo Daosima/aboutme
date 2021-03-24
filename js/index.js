@@ -6,7 +6,7 @@
 
 		Summaries[0] = 'love';
 
-		Summaries[1] = 'perfect pixel';
+		Summaries[1] = 'pixel perfect ';
 
 		Summaries[2] = 'inspiration';
 

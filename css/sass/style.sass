@@ -77,6 +77,7 @@ img
 	&__item
 		border: none
 	&__link
+		font-size: 1.5rem
 	&__img
 	&__dropdown-list
 	&__dropdown-item
@@ -99,7 +100,7 @@ img
 	.promo
 		text-align: center
 		&__header
-			font-size: 45px
+			font-size: 2rem
 			text-transform: uppercase
 	.promo-wrap
 		margin-top: 20%
@@ -338,11 +339,8 @@ img
 			padding-top: 6rem
 			text-align: center
 		&__card-text
-
-
 	.skills
 		margin-top: 1rem
-		height: 100vh
 		hr
 			padding: 0
 			margin: 0
@@ -494,4 +492,58 @@ img
 					background-repeat: no-repeat
 					background-size: 75%
 
+.footer
+	margin-top: 3rem
+	padding: 3rem 2rem 10rem 2rem
+
+	color: #ffffff
+	background-color: #212121
+	background-image: url(../img/footer_bg.png)
+	background-position: 0 0
+	background-repeat: no-repeat
+	text-align: center
+	&__contact
+	&__contact-text
+		font-weight: 700
+	&__contact-fone
+		list-style: none
+		text-decoration: none
+		color: #ffffff
+	&__contact-fone:hover
+		color: #ffffff
+
+	.footer-social
+		&__list
+		&__item
+			position: relative
+			list-style: none
+			padding: 1rem
+			span::before
+				position: absolute
+				content: ""
+
+				top: 2rem
+				left: 0
+
+				width: 4rem
+				height: 4rem
+
+				border-radius: 50%
+
+				background-color: #000000
+			span:hover::before
+				background-color: #ffffff
+			.vk::after
+				position: absolute
+				content: ""
+
+				width: 3rem
+				height: 3rem
+
+				background-image: url(../img/social/vk.png)
+				background-position: 0 0
+				background-repeat: no-repeat
+
+
+		&__link
 
