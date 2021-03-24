@@ -518,7 +518,7 @@ img
 			position: relative
 			list-style: none
 			padding: 1rem
-			span::before
+			.vk::before
 				position: absolute
 				content: ""
 
@@ -530,20 +530,122 @@ img
 
 				border-radius: 50%
 
-				background-color: #000000
-			span:hover::before
 				background-color: #ffffff
+			.vk:hover::before
+				background-color: #000000
 			.vk::after
 				position: absolute
 				content: ""
 
-				width: 3rem
-				height: 3rem
+				top: 2rem
+				right: -2rem
 
-				background-image: url(../img/social/vk.png)
+				width: 4rem
+				height: 4rem
+
+				background-image: url(../img/social/vk-b.svg)
 				background-position: 0 0
 				background-repeat: no-repeat
+				background-size: 100%
+			.vk:hover::after
+				position: absolute
+				content: ""
 
+				top: 2rem
+				right: -2rem
 
+				width: 4rem
+				height: 4rem
+
+				background-image: url(../img/social/vk-r.svg)
+				background-position: 0 0
+				background-repeat: no-repeat
+				background-size: 100%
+			.tel::before
+				position: absolute
+				content: ""
+
+				top: 2rem
+				left: 0
+
+				width: 4rem
+				height: 4rem
+
+				border-radius: 50%
+
+				background-color: #ffffff
+			.tel:hover::before
+				background-color: #000000
+			.tel::after
+				position: absolute
+				content: ""
+
+				top: 2.2rem
+				right: -2rem
+
+				width: 4rem
+				height: 4rem
+
+				background-image: url(../img/social/tel-b.svg)
+				background-position: 0 0
+				background-repeat: no-repeat
+				background-size: 90%
+			.tel:hover::after
+				position: absolute
+				content: ""
+
+				top: 2.2rem
+				right: -2rem
+
+				width: 4rem
+				height: 4rem
+
+				background-image: url(../img/social/tel-r.svg)
+				background-position: 0 0
+				background-repeat: no-repeat
+				background-size: 90%
+			.git::before
+				position: absolute
+				content: ""
+
+				top: 2rem
+				left: 0
+
+				width: 4rem
+				height: 4rem
+
+				border-radius: 50%
+
+				background-color: #ffffff
+			.git:hover::before
+				background-color: #000000
+			.git::after
+				position: absolute
+				content: ""
+
+				top: 2rem
+				right: -2rem
+
+				width: 4rem
+				height: 4rem
+
+				background-image: url(../img/social/git-b.svg)
+				background-position: 0 0
+				background-repeat: no-repeat
+				background-size: 100%
+			.git:hover::after
+				position: absolute
+				content: ""
+
+				top: 2rem
+				right: -2rem
+
+				width: 4rem
+				height: 4rem
+
+				background-image: url(../img/social/git-r.svg)
+				background-position: 0 0
+				background-repeat: no-repeat
+				background-size: 100%
 		&__link
 
